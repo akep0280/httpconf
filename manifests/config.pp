@@ -1,5 +1,5 @@
 class httpconf::config {
-  
+
 
 
 
@@ -15,7 +15,7 @@ file_line {'RewriteEngine':
 
 file_line {'RewriteCond1':
   path => '/etc/httpd/conf/httpd.conf',
-  line => '%{THE_REQUEST} !HTTP/1\.1$',
+  line => 'RewriteCond %{THE_REQUEST} !HTTP/1\.1$',
 }
 
 file_line {'RewriteRule1':
