@@ -1,5 +1,5 @@
 class httpconf::config {
-  class {'apache':}
+  
 
 
 
