@@ -1,4 +1,4 @@
 class httpconf {
   include stdlib
-  include httpd
+  include apache
 }
