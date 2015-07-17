@@ -78,6 +78,10 @@ file_line {'GeoIPEnable':
   line => 'GeoIPEnable On',
 }
 
+file {'/etc/httpd/vhosts.d':
+  ensure => "directory",
+}
+
 file_line {'includevhost':
   path => '/etc/httpd/conf/httpd.conf',
   line => 'include /etc/httpd/vhosts.d/*.conf',
