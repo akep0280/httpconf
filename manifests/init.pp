@@ -1,4 +1,4 @@
 class httpconf {
-  include stdlib
+  include apache
   include httpconf::config
 }
