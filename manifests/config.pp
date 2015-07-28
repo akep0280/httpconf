@@ -6,7 +6,7 @@ class httpconf::config {
     owner    => 'root',
     group    => 'root',
     mode     => '0644',
-    source   => 'puppet:///modules/httpconf/files/nasba_cis.conf',
+    source   => 'puppet:///modules/httpconf/nasba_cis.conf',
     }
 
   }
