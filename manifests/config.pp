@@ -50,9 +50,19 @@ file_line {'FileMatchend':
   line => '        </FilesMatch>',
 }
 
+file_line {'Blank_line_1':
+  path => '/etc/httpd/conf/httpd.conf',
+  line => '',
+}
+
 file_line {'Header':
   path => '/etc/httpd/conf/httpd.conf',
   line => 'Header always append X-Frame-Options SAMEORIGIN',
+}
+
+file_line {'Blank_line_2':
+  path => '/etc/httpd/conf/httpd.conf',
+  line => '',
 }
 
 file_line {'SSLInsecureRenegotiation':
