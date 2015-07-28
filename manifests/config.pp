@@ -50,7 +50,7 @@ file_line {'FileMatchend':
 
 file_line {'Blank_line_1':
   path => '/etc/httpd/conf/httpd.conf',
-  line => '',
+  line => '#blank',
 }
 
 file_line {'Header':
@@ -60,7 +60,7 @@ file_line {'Header':
 
 file_line {'Blank_line_2':
   path => '/etc/httpd/conf/httpd.conf',
-  line => '',
+  line => '#blank',
 }
 
 file_line {'SSLInsecureRenegotiation':
