@@ -1,6 +1,8 @@
 class httpconf::config {
 
-
+package { 'apache':
+  ensure => present,
+} -> # and then:
 
 
 file_line {'NameVirtualHost':
