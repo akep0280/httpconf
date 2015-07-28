@@ -55,7 +55,7 @@ file_line {'Blank_line_1':
 
 file_line {'Header':
   path => '/etc/httpd/conf/httpd.conf',
-  line => 'Header always append X-Frame-Options SAMEORIGIN',
+  line => '#Header always append X-Frame-Options SAMEORIGIN',
 }
 
 file_line {'Blank_line_2':
