@@ -1,4 +1,4 @@
 class httpconf {
-  include apache
+  include apache::default_mods
   include httpconf::config
 }
