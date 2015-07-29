@@ -1,4 +1,5 @@
 class httpconf::config {
+  include apache
 
 
   file {'/etc/httpd/conf.d/nasba_cis.conf':
