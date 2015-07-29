@@ -5,6 +5,6 @@ class httpconf::modules {
 }
 
 class httpconf::modules::headers {
-  class {apache::mod::headers
+  class {'apache::mod::headers':
 }
 }
