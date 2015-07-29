@@ -1,5 +1,10 @@
 class httpconf::modules {
   class { 'apache::default_mods':
-    apache::mod {'headers':}
+
+}
+}
+
+class httpconf::modules::headers {
+  class {apache::mod {'headers'}
 }
 }
