@@ -11,12 +11,5 @@ class httpconf::config {
     require  => Package['httpd'],
     }
 
-    file {'/etc/httpd/conf.d/geoip.conf':
-      ensure   => 'file',
-      owner    => 'root',
-      group    => 'root',
-      mode     => '0644',
-      source   => 'puppet:///modules/httpconf/geoip.conf',
-      require  => Package['httpd'],
-      }
+
   }
