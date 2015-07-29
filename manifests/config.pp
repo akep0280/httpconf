@@ -1,9 +1,13 @@
 class httpconf::config {
-  include apache
 
-  apache::custom_config { 'nasba_cis.conf':
-    ensure => present,
-    source => 'puppet:///modules/httpconf/nasba_cis.conf',
-  }
+
+  file {'/etc/httpd/conf.d/nasba_cis.conf':
+    ensure   => 'file',
+    owner    => 'root',
+    group    => 'root',
+    mode     => '0644',
+    source   => 'puppet:///modules/httpconf/nasba_cis.conf',
+    require  => Package['httpd'],
+    }
 
   }
