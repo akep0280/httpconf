@@ -23,4 +23,12 @@ class httpconf::config {
   package { 'mod_geoip':
     ensure => 'present',
     }
+
+  file { '/etc/httpd/vhosts.d':
+    ensure  => 'directory',
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0755',
+    require => Package['httpd'],
   }
+}
