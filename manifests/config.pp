@@ -19,4 +19,8 @@ class httpconf::config {
       source   => 'puppet:///modules/httpconf/geoip.conf',
       require  => Package['httpd'],
       }
+
+  package { 'mod_geoip':
+    ensure => 'present',
+    }
   }
