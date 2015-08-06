@@ -28,6 +28,8 @@ class httpconf::modules {
   }
   class {'apache::mod::rewrite':
   }
+  class {'apache::mod::proxy':
+  }
   class {'apache::mod::cache':
   }
   class {'apache::mod::disk_cache':
